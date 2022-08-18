@@ -3,14 +3,14 @@ FROM ${ARCH}debian:bullseye AS builder
 
 RUN apt-get -y update && \
   apt-get -y install \
-  build-essential git-core \
-  lintian pkg-config quilt patch cargo \
-  nodejs node-colors node-commander \
-  libudev-dev libapt-pkg-dev \
-  libacl1-dev libpam0g-dev libfuse3-dev \
-  libsystemd-dev uuid-dev libssl-dev \
-  libclang-dev libjson-perl libcurl4-openssl-dev \
-  dh-exec wget
+    build-essential git-core \
+    lintian pkg-config quilt patch cargo \
+    nodejs node-colors node-commander \
+    libudev-dev libapt-pkg-dev \
+    libacl1-dev libpam0g-dev libfuse3-dev \
+    libsystemd-dev uuid-dev libssl-dev \
+    libclang-dev libjson-perl libcurl4-openssl-dev \
+    dh-exec wget
 
 RUN wget https://static.rust-lang.org/rustup/rustup-init.sh && \
   chmod +x rustup-init.sh && \
