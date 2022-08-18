@@ -160,8 +160,8 @@ version: '2.1'
 services:
   pbs:
     environment:
-      BGID: 1000
       BUID: 1001
+      BGID: 1000
 ```
 
 ## Install on bare-metal host
